@@ -1,9 +1,10 @@
 import esphome.config_validation as cv
 from esphome.const import CONF_ID
-from esphome.cpp_types import Component, i2c
+from esphome.cpp_types import Component
+from esphome.components import i2c  # <--- fixed import
 from esphome.cpp_generator import Pvariable, add
 
-# Define the automation keys manually
+# Automation keys
 CONF_ON_PRESS = "on_press"
 CONF_ON_LONG_PRESS = "on_long_press"
 CONF_ON_CLOCKWISE = "on_clockwise"
